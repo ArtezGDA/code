@@ -1,0 +1,38 @@
+import processing.pdf.*;
+
+PFont f;
+PImage photo;
+PFont g;
+PFont h;
+
+
+  
+
+void setup() {
+  size(594, 841, PDF, "Poster Romeo and Juliet.pdf");
+  
+  photo = loadImage("posterrenj.jpg");
+  background(255);
+  image(photo, 35,35,523, 770);
+  f = createFont ("Georgia", 13);
+  g = createFont ("Georgia", 7);
+  h = createFont ("Georgia", 10);
+    textFont(f);
+   
+
+ fill (200);
+  text ("Romeo and Juliet", 255, 20);
+  textFont(h);
+  text ("by William Shakespeare", 240, 830);
+  
+  textFont(g);
+  fill (200);
+  text (" 324", 275, 30);
+
+  text ("189", 330, 30);
+  
+  println("Finished.");
+  exit();
+ 
+}
+
